@@ -1,0 +1,22 @@
+@import url("man.css");
+@import url("balls.css");
+@import url("animation.css");
+
+.background{
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: blue;
+    height: 865px;
+}
+.background:hover {
+    background-color: #008f00;
+}
+.background_1 {
+    width: 350px;
+    height: 350px;
+    top: 250px;
+    margin: 0 auto;
+    border: 2px solid black;
+    position: relative;
+    background-color: #ffffff;
+}

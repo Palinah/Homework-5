@@ -1,0 +1,83 @@
+.head {
+    top: 45px;
+    left: 147px;
+    width: 50px;
+    height: 65px;
+    border: 1px solid #000000;
+    border-radius: 35px / 40px;
+    position: absolute;
+}
+
+.body {
+    top: 125px;
+    left: 115px;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+}
+
+.line_top_bottom {
+    position: absolute;
+    height: 120px;
+    width: 85px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.line_right {
+    border-left: 1px solid #000000;
+    transform: skewX(10deg);
+}
+
+.line_left {
+    border-right: 1px solid #000000;
+    transform: skewX(170deg);
+    left: 30px;
+}
+
+.arm {
+    position: absolute;
+    top: 125px;
+    height: 115px;
+    width: 1px;
+    background: #000000;
+    transform-origin: top left;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.arm_left {
+    left: 242px;
+    animation-name: move_arm_left;
+}
+
+.arm_right {
+    left: 104px;
+    animation-name: move_arm_right;
+}
+
+.arm:after {
+    content: "";
+    position: absolute;
+    top: 115px;
+    background: #000000;
+    transform-origin: top left;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.arm_left:after {
+    width: 1px;
+    height: 50px;
+    animation-name: move_wrist_left;
+}
+
+.arm_right:after {
+    width: 50px;
+    height: 1px;
+    left: 1px;
+    transform: rotate(90deg);
+    animation-name: move_wrist_right;
+}
